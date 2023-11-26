@@ -1,0 +1,8 @@
+Server name: azurewebapplogin-server
+Engine: MySQL - Flexible Server
+Compute tier and size: Burstable Standard_B1ms
+Database name: azurewebapplogin-database
+Region: East US
+Username: xsbmkubclb
+Password: V8PR3F0E1H2JQ12L$
+Host: azurewebapplogin-server.mysql.database.azure.com
