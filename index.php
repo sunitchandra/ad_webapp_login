@@ -3,13 +3,6 @@
     $nameErr = $emailErr = "";
     $name = $email = "";
 
-    $conn = mysqli_init();
-    mysqli_ssl_set($conn,NULL,NULL, "ad_webapp_DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-    mysqli_real_connect($conn, 'azurewebapplogin-server.mysql.database.azure.com', 'xsbmkubclb', 'Sunit123!@#', 'azurewebapplogin-database', 3306, MYSQLI_CLIENT_SSL);
-    if (mysqli_connect_errno($conn)) {
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-    }
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
         $nameErr = "Name is required";
